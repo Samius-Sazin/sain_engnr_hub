@@ -1,0 +1,23 @@
+.engnr_selectionArea{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 0px 20px 0px 20px;
+}
+.engnrsContainer{
+    margin: 0px 20px 10px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.InputArea{
+    padding: 20px 10px;
+    margin: 0px 0px 3px 0px;
+    text-align: center;
+    background-color: black;
+}
+.searchBox{
+    width: 80%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}

@@ -1,0 +1,53 @@
+.show-engnr{
+    background-color: #1f1f1f;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    color: white;
+}
+.image{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.image img{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+}
+.image img:hover{
+    scale: 1.04;
+}
+.other-info p{
+    margin: 10px 0px 0px 0px;
+}
+.name{
+    text-decoration: none;
+    margin: 0px 0px 0px 0px;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(225, 230, 254);
+}
+.name.name:hover{
+    color: #247efc;
+}
+.name span{
+    font-weight: 450;
+}
+.hire-now-button{
+    margin-top: 20px;
+    text-align: center;
+}
+.hire-now-button button{
+    background-color: #f67000;
+    border: 0;
+    color: #1f1f1f;
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+}
+.hire-now-button button:hover{
+    background-color: #c45902;
+}

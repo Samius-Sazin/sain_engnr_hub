@@ -1,0 +1,27 @@
+.header{
+    text-align: center;
+    background-color: #1f1f1f;
+    width: 100%;
+    margin: 0px 0px 2px 0px;
+    padding: 10px 0px;
+}
+.header-title{
+    font-size: 35px;
+    font-weight: 700;
+    color: #f77000;
+    margin: 0px 0px 0px 0px;
+}
+.header-title2{
+    margin: -7px 0px 0px 0px;
+}
+.header-title2 span{
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: white;
+}
+.header-title3{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 7px 0px 0px 0px;
+}
