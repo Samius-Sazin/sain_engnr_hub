@@ -16,7 +16,7 @@ function ShowHiredEngnr(props) {
         </div>
 
         <div className='cancel'>
-            <button><i class="fa-solid fa-xmark"></i></button>
+            <button><i className="fa-solid fa-xmark"></i></button>
         </div>
         
     </div>

@@ -31,7 +31,7 @@ function ShowEngnr(props) {
         <button
           onClick={() => props.handleHireButton(props.engnr)}
         >
-        <i class="fa-brands fa-hive"></i> Hire Now</button>
+        <i className="fa-brands fa-hive"></i> Hire Now</button>
       </div>
 
     </div>

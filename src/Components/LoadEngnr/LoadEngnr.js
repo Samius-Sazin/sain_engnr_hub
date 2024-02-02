@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './LoadEngnr.css';
 import ShowEngnr from '../ShowEngnr/ShowEngnr';
 import SelectionArea from '../SelectionArea/SelectionArea';
+import { addEngnr, getEngnrListFrmLS } from '../../addToLocalStorage/AddToLocalStorage';
 
 function LoadEngnr() {
     const [engnrs, setEngnrs] = useState([]);
@@ -17,6 +18,20 @@ function LoadEngnr() {
         });
     }, [])
 
+    useEffect(() => {
+      if(engnrs.length){
+        const getSavedEngnrList = getEngnrListFrmLS();
+        const allSavedEngnr = [];
+
+        for(let eachSavedEngnr in getSavedEngnrList){
+          const find_engineer = engnrs.find(engnr => eachSavedEngnr === engnr.name);
+          allSavedEngnr.push(find_engineer);
+        }
+
+        setHired(allSavedEngnr);
+      }
+    }, [engnrs])
+
     const handleHireButton = (engnr) => {
       let found = 0;
       for(let element of hired){
@@ -27,6 +42,9 @@ function LoadEngnr() {
       if(!found){
         const updateSelectionArea = [...hired, engnr];
         setHired(updateSelectionArea);
+
+        //add to Local Storage
+        addEngnr(engnr.name);
       }
     }
 
@@ -64,7 +82,8 @@ function LoadEngnr() {
 
         {/* selecttion area */}
         <div className='selectionArea'>
-          <SelectionArea hired={hired}/>
+          <SelectionArea
+            hired={hired}/>
         </div>
       </div>
     </>

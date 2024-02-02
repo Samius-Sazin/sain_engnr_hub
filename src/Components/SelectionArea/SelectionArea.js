@@ -19,6 +19,7 @@ function SelectionArea(props) {
         {
           props.hired.map(eachHired =>
             <ShowHiredEngnr
+              key={eachHired.serialNumber}
               eachHired={eachHired}
             />)
         }
